@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <h1>화장품</h1>
+    <h2>기초화장품</h2>
+    <h3>기초화장품의 9대 원료</h3>
+    <ul>
+    <script>
+        cosmetics = ["정제수", "유성원료", "계면활성제", "보습제", "보존제", "점증제", "색소", "착향제", "효능원료"];
+        cosmeticsList = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+        var i = 0;
+        while(i < cosmetics.length){
+            document.write('<li><a href="https://www.google.com/search?q=' + cosmetics[i] + '">' + cosmetics[i] + '</li>');
+            document.write('<img src="' + cosmeticsList[i] + '.jpg" width="30%">')
+            i = i + 1;
+        }
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while (i < alist.length) {
+        alist[i].style.color = 'pink';
+        i = i + 1;
+        } 
+    </script>
+    </ul>
+</body>
+</html>
